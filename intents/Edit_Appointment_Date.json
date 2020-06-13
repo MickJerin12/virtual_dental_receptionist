@@ -1,0 +1,122 @@
+{
+  "id": "16df2662-f49a-4a61-ba0c-2801235ecc8e",
+  "name": "Edit_Appointment_Date",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "bffec565-8ec3-47a6-8572-52cdae728846",
+          "required": true,
+          "dataType": "@doctor_name",
+          "name": "doc_name",
+          "value": "$doc_name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "pleaser enter the doctor name that you have booked before"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "12ff80d5-25f2-4327-896f-b7c9455e1030",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date_postponed",
+          "value": "$date_postponed",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "please enter the old date of your appointment"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "fe573423-a973-424d-a61f-0b44d35c4f55",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "new_date",
+          "value": "$new_date",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "please enter the new date of appointment"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "26263a7d-231e-475a-a602-d4c05867a102",
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "new_time",
+          "value": "$new_time",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "please enter the time of appointment"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "189fc785-2ff4-4b91-98dd-b73bb0cf8354",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "new_issue",
+          "value": "$new_issue",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your issue"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "Some error has occured while changing the appointment date!"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

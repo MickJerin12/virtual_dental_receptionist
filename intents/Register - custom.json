@@ -1,0 +1,102 @@
+{
+  "id": "c3e38bc1-9c7d-410a-9d04-9acb00d16d30",
+  "parentId": "b0d81581-bc79-4f5b-a5d0-c57ebe3a0a2a",
+  "rootParentId": "b0d81581-bc79-4f5b-a5d0-c57ebe3a0a2a",
+  "name": "Register - custom",
+  "auto": true,
+  "contexts": [
+    "Register-followup"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "Register.Register-custom",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "d37d37c9-03fe-4f44-8537-e1b5e911a010",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "date",
+          "value": "$date",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "please enter the date(month with day)"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "38e6b4cd-71e3-4738-9d61-fa8e12982b78",
+          "required": true,
+          "dataType": "@sys.time",
+          "name": "time",
+          "value": "$time",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "please enter the time"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "90829742-c2ae-4e49-b547-a274ad246069",
+          "required": true,
+          "dataType": "@doctor_name",
+          "name": "doctor",
+          "value": "$doctor",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter doctor  name, our doctors are Dr.Anushya, Dr.Aspine, Dr.Jophine, with whom you like to have an appointment?"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "573fc8a7-f6d7-43f8-aec5-43ca2c0be007",
+          "required": true,
+          "dataType": "@sys.any",
+          "name": "issue",
+          "value": "$issue",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your issue"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

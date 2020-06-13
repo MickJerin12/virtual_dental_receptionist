@@ -1,0 +1,86 @@
+{
+  "id": "7ce47cdf-b31c-4464-8bdb-51029adcbae7",
+  "name": "doc_leave",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "7ce04476-648f-43de-87cb-f04312bb2734",
+          "required": true,
+          "dataType": "@Doc_unique",
+          "name": "doc_pass",
+          "value": "$doc_unique",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter the key"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "ffbf3971-5a71-4324-98f8-7cb3e7c44326",
+          "required": true,
+          "dataType": "@doctor_name",
+          "name": "doc_name0",
+          "value": "$doc_name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your name"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "296db5fc-088a-44bc-b7c3-79ba53e383b4",
+          "required": true,
+          "dataType": "@sys.date",
+          "name": "leave_date",
+          "value": "$doc_leave_date",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter the leave date"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

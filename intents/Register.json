@@ -1,0 +1,128 @@
+{
+  "id": "b0d81581-bc79-4f5b-a5d0-c57ebe3a0a2a",
+  "name": "Register",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "Register-followup",
+          "parameters": {},
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "c9a2cc22-6eba-415d-9cac-fe8af6cd54c2",
+          "required": true,
+          "dataType": "@sys.given-name",
+          "name": "New_patient_name",
+          "value": "$New_patient_name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please Enter your name"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "b6fd421f-5573-44fb-8c9a-203f2148d5b0",
+          "required": true,
+          "dataType": "@age",
+          "name": "New_patient_age",
+          "value": "$New_patient_age",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your Age"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "16302c9c-8fae-423e-8cdc-99f30d1230cc",
+          "required": true,
+          "dataType": "@Gender",
+          "name": "New_patient_gender",
+          "value": "$New_patient_gender",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your Gender"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "29a99959-e84f-4d9f-8e0b-bc735bf3b77d",
+          "required": true,
+          "dataType": "@sys.phone-number",
+          "name": "New_patient_phone",
+          "value": "$New_patient_phone",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please Re-enter your phone number"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "b402255a-46dc-433e-974c-e55c4da491a9",
+          "required": true,
+          "dataType": "@sys.email",
+          "name": "New_patient_email",
+          "value": "$New_patient_emailid",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your Email ID"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "thanks for your information"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

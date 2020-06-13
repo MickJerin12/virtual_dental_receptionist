@@ -1,0 +1,50 @@
+[
+  {
+    "id": "e9c0665c-0a61-41c3-8288-f6f7873ddf8c",
+    "data": [
+      {
+        "text": "change my appointment date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "da3a6aa7-99bb-4102-ab88-ffac5f0afd43",
+    "data": [
+      {
+        "text": "prepone my appointment",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "311937c3-380b-4ecb-b35d-044d494f235a",
+    "data": [
+      {
+        "text": "Postpone my appointment",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2e8b6e54-fb42-4d35-bcad-17cab66493b5",
+    "data": [
+      {
+        "text": "Edit my appointment date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

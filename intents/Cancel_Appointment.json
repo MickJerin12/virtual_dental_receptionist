@@ -1,0 +1,68 @@
+{
+  "id": "180232bf-711d-4e27-82b7-f73f1b09640f",
+  "name": "Cancel_Appointment",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "8643b3d1-95d7-4f82-a41f-9fd5e90a1a37",
+          "required": true,
+          "dataType": "@doctor_name",
+          "name": "doc_name",
+          "value": "$doc_name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please type in the doctor\u0027s name"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "eeb781cc-c834-4595-bf83-5b4314073ef3",
+          "required": true,
+          "dataType": "@sys.date-time",
+          "name": "date_of_app",
+          "value": "$date_of_app",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Provide the date of your appointment"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": "hi"
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

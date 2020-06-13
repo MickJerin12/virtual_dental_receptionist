@@ -1,0 +1,38 @@
+[
+  {
+    "id": "b34cac74-0c5d-4df6-b7f3-1fce585f5706",
+    "data": [
+      {
+        "text": "i want to book an appointment",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3bf5cb98-6305-4f06-b5f4-db948a4f916f",
+    "data": [
+      {
+        "text": "Re-enter date and doctor name",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0b3e9999-33fe-469c-864d-19da95ec00ca",
+    "data": [
+      {
+        "text": "My details are correct",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

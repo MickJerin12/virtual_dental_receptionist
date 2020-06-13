@@ -1,0 +1,9 @@
+{
+  "id": "ff22bf74-97c4-4c5e-bc25-3207f2a24fff",
+  "name": "doctor_name",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

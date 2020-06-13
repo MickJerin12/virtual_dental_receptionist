@@ -1,0 +1,111 @@
+{
+  "id": "be7b9fae-bd9a-48fb-a6a5-7a48969e5275",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "id": "56d10d5a-7564-4571-8e78-be5b95f51862",
+          "required": false,
+          "dataType": "@sys.phone-number",
+          "name": "phone_number",
+          "value": "$phno",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Please enter your Phone number"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "11cf5300-b4aa-45de-9c77-08312ddfdd8a",
+          "required": false,
+          "dataType": "@sys.given-name",
+          "name": "new_name",
+          "value": "$new_name",
+          "prompts": [
+            {
+              "lang": "en",
+              "value": "Enter new  Name"
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        }
+      ],
+      "messages": [
+        {
+          "type": "suggestion_chips",
+          "platform": "google",
+          "lang": "en",
+          "condition": "",
+          "suggestions": [
+            {
+              "title": "Book an Appointment"
+            }
+          ]
+        },
+        {
+          "type": 0,
+          "lang": "en",
+          "condition": "",
+          "speech": [
+            "Welcome to Efron\u0027s clinic, Hello!  How can I help you?",
+            "Welcome to Efron\u0027s clinic, Good day! What can I do for you today?",
+            "Welcome to Efron\u0027s clinic, Greetings! How can I assist?"
+          ]
+        },
+        {
+          "type": 4,
+          "lang": "en",
+          "condition": "",
+          "payload": {
+            "platform": "kommunicate",
+            "metadata": {
+              "contentType": "300",
+              "templateId": "6",
+              "payload": [
+                {
+                  "title": "Book an Appointment",
+                  "message": "I wish to Book an Appointment"
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "defaultResponsePlatforms": {
+        "google": true
+      },
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    },
+    {
+      "name": "TELEPHONY_WELCOME"
+    }
+  ],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}
