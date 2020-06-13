@@ -6,3 +6,6 @@ Firebase
 
 # Zapier
 Automated workflow using Zapier(Google Docs,Google Calendar,Gmail,Sms)
+
+# Integrations
+Google Assistant, Telegram
